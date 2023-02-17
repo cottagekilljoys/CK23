@@ -109,11 +109,11 @@ main {
     height: 70%;
     flex-direction: column;
     text-align: center;
-    background-color: #8869AC;
+    background-color: white;
 }
 
 text {
-    color: white;
+    color: black;
     font-family: Verdana;
     font-weight: 300;
 }
