@@ -37,7 +37,7 @@ h1 {
     height: 30%;
     text-align: center;
     background-image: none;
-    background-color: darkgray;
+    background-color: #585858ff;
     margin: 0;
 
 }
@@ -109,7 +109,7 @@ main {
     height: 70%;
     flex-direction: column;
     text-align: center;
-    background-color: darkgray;
+    background-color: #585858ff;
 }
 
 text {
@@ -125,7 +125,7 @@ section {
     text-align: center;
     height: 100%;
     background-image: none;
-    background-color: darkgray;
+    background-color: #585858ff;
     margin: 0;
 }
 
