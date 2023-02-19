@@ -4,6 +4,7 @@ body {
     padding: 0;
     margin: 0;
     height: 100vh;
+    background-color: #585858ff;
 }
 /* header with class "header" specifies background image appearance */
 .header {
@@ -34,8 +35,7 @@ h1 {
 }
 /* header with class "header", second page that appears on the screen */
 .header:nth-child(2) {
-    height: 30%;
-    text-align: center;
+    height: 100%;
     background-image: none;
     background-color: #585858ff;
     margin: 0;
@@ -44,19 +44,23 @@ h1 {
 
 h2 {
     font-family: Verdana;
-    color: black;
+    text-align: center;
+    color: white;
     padding: 32px 32px 32px 32px;
     margin: 0;
 }
 
+nav {
+    text-align: center;
+}
+
 button {
     font-family: Verdana;
-    font-weight: var(--font-weight-8);
-    /* font-size: var(--font-size-5); */
-    color: var(--gray-8);
-    background: var(--gray-0);
+    font-weight: 800;
+    color: #343a40;
+    background: #f8f9fa;
     border: 0;
-    padding: var(--size-4) var(--size-8);
+    padding: 20px 48px;
     margin: 32px;
     border-radius: 16px;
     transform: translateY(calc(var(--y, 0) * 1%)) scale(var(--scale));
@@ -79,8 +83,8 @@ button {
   button:before {
     content: "";
     position: absolute;
-    inset: calc(var(--size-3) * -1);
-    border: var(--size-2) solid var(--gray-0);
+    inset: calc(16px * -1);
+    border: 8px solid #f8f9fa;
     transform: scale(var(--border-scale, 0));
     transition: transform 0.125s;
     
@@ -102,21 +106,45 @@ button {
     );
     
     z-index: -1;
-  }
+}
 
 main {
-    display: flex;
-    height: 70%;
-    flex-direction: column;
-    text-align: center;
     background-color: #585858ff;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.cottage-img {
+    padding: 32px 32px 32px 256px;
+    width: 300px;
+    height: 200px;
+
 }
 
 text {
-    color: black;
+    display: block;
+    padding: 64px 256px 32px 0px;
+    color: white;
+    text-align: left;
     font-family: Verdana;
     font-weight: 300;
 }
+
+  /* On screens that are 992px or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 992px) {
+    main {
+      flex-direction: column;
+    }
+    .cottage-img {
+        padding: 72px;
+        text-align: center;
+    }
+    text {
+        padding: 32px;
+        text-align: center;
+    }
+  }
 
 section {
     display: flex;
@@ -132,7 +160,7 @@ section {
 content {
     font-weight: 700;
     font-family: Verdana;
-    color: black;
+    color: white;
     padding: 32px 32px 32px 32px;
     margin: 0;
 }
