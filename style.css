@@ -79,6 +79,13 @@ button {
     --scale: 0.9;
     --border-scale: 0.9, 0.8;
   }
+
+
+  button:focus {
+    --y: -10;
+    --scale: 1.1;
+    --border-scale: 1;
+}
   
   button:before {
     content: "";
