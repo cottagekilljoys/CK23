@@ -1,21 +1,32 @@
 @import "https://unpkg.com/open-props";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     padding: 0;
     margin: 0;
     height: 100vh;
-    background-color: #585858ff;
+    background-color: rgb(141, 141, 190);
 }
 /* header with class "header" specifies background image appearance */
 .header {
     height: 100%;
-    background-image: url(images/womensliberation.jpg);
+    background-image: url(images/boulder_protest.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
     
 }
+
+.scroll-down {
+    color: white;
+    background: none;
+    border: none;
+}
+
 /* header with class "header", first page that appears on the screen, specifies text appearance */
 .header:nth-child(1) {
     display: flex;
@@ -25,149 +36,77 @@ body {
     align-items: center;
 }
 
+.container {
+    background-color: rgb(141, 141, 190, 0.7);
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+}
+
 h1 {
-    color:white;
+    color: white;
     font-family: Verdana;
     font-style: italic;
-    font-weight: bolder;
-    font-size: 45px;
-    letter-spacing: 10px;
+    font-size: 64px;
+    letter-spacing: 5px;
 }
 /* header with class "header", second page that appears on the screen */
 .header:nth-child(2) {
     height: 100%;
     background-image: none;
-    background-color: #585858ff;
+    background-color: rgb(141, 141, 190);
     margin: 0;
 
 }
 
 h2 {
-    font-family: Verdana;
+    font-family: Georgia;
     text-align: center;
     color: white;
-    padding: 32px 32px 32px 32px;
+    padding: 32px;
     margin: 0;
+    font-size: 72px;
 }
 
 nav {
     text-align: center;
+    font-size: 25px;
+    font-family: Open Sans;
+    padding-bottom: 50px;
 }
 
-button {
-    font-family: Verdana;
-    font-weight: 800;
-    color: #343a40;
-    background: #f8f9fa;
-    border: 0;
-    padding: 20px 48px;
-    margin: 32px;
-    border-radius: 16px;
-    transform: translateY(calc(var(--y, 0) * 1%)) scale(var(--scale));
-    transition: transform 0.1s;
-    position: relative;
-  }
-  
-  button:hover {
-    --y: -10;
-    --scale: 1.1;
-    --border-scale: 1;
-  }
-  
-  button:active {
-    --y: 5%;
-    --scale: 0.9;
-    --border-scale: 0.9, 0.8;
-  }
-
-
-  button:focus {
-    --y: -10;
-    --scale: 1.1;
-    --border-scale: 1;
-}
-  
-  button:before {
-    content: "";
-    position: absolute;
-    inset: calc(16px * -1);
-    border: 8px solid #f8f9fa;
-    transform: scale(var(--border-scale, 0));
-    transition: transform 0.125s;
-    
-    --angle-one: 105deg;
-    --angle-two: 290deg;
-    --spread-one: 30deg;
-    --spread-two: 40deg;
-    --start-one: calc(var(--angle-one) - (var(--spread-one) * 0.5));
-    --start-two: calc(var(--angle-two) - (var(--spread-two) * 0.5));
-    --end-one: calc(var(--angle-one) + (var(--spread-one) * 0.5));
-    --end-two: calc(var(--angle-two) + (var(--spread-two) * 0.5));
-    
-    mask: conic-gradient(
-      transparent 0 var(--start-one),
-      white var(--start-one) var(--end-one),
-      transparent var(--end-one) var(--start-two),
-      white var(--start-two) var(--end-two),
-      transparent var(--end-two)
-    );
-    
-    z-index: -1;
+a {
+    padding: 10px;
+    color: white;
 }
 
 main {
-    background-color: #585858ff;
-    position: relative;
+    background-color: rgb(141, 141, 190);
     display: flex;
-    flex-direction: row;
-}
-
-.cottage-img {
-    padding: 32px 32px 32px 256px;
-    width: 300px;
-    height: 200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 
 }
 
 text {
-    display: block;
-    padding: 64px 256px 32px 0px;
     color: white;
-    text-align: left;
-    font-family: Verdana;
-    font-weight: 300;
+    font-family: Open Sans;
+    max-width: 50vw;
+    font-size: 20px;
 }
 
-  /* On screens that are 992px or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 992px) {
-    main {
-      flex-direction: column;
-    }
-    .cottage-img {
-        padding: 72px;
-        text-align: center;
-    }
-    text {
-        padding: 32px;
-        text-align: center;
-    }
-  }
-
 section {
+    background: rgb(141, 141, 190);
     display: flex;
-    flex-direction: column;
     text-align: center;
-    text-align: center;
-    height: 100%;
-    background-image: none;
-    background-color: #585858ff;
-    margin: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 content {
-    font-weight: 700;
-    font-family: Verdana;
     color: white;
-    padding: 32px 32px 32px 32px;
-    margin: 0;
+    font-family: Georgia;
+    font-size: 72px;
+    font-weight: 900;
+    padding: 32px;
 }
