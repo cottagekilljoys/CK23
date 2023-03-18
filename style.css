@@ -40,6 +40,7 @@ body {
     background-color: rgb(141, 141, 190, 0.7);
     border-radius: 10px;
     backdrop-filter: blur(2px);
+    padding: 20px;
 }
 
 h1 {
@@ -114,5 +115,6 @@ content {
 @media screen and (max-width: 768px) {
     body {
       background-size: contain;
+      background-image: none;
     }
   }
