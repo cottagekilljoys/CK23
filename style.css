@@ -1,5 +1,3 @@
-@import "https://unpkg.com/open-props";
-
 html {
     scroll-behavior: smooth;
 }
@@ -99,6 +97,7 @@ text {
 section {
     background: rgb(141, 141, 190);
     display: flex;
+    flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -106,10 +105,15 @@ section {
 
 content {
     color: white;
-    font-family: Georgia;
-    font-size: 72px;
-    font-weight: 900;
-    padding: 32px;
+    font-family: Open Sans;
+    max-width: 50vw;
+    font-size: 20px;
+}
+
+li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 @media screen and (max-width: 768px) {
