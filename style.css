@@ -225,6 +225,22 @@ content {
     left: -14px;
 }
 
+.resources-row {
+    display: flex;
+}
+
+.resources-column {
+    flex: 50%;
+    padding: 50px;
+}
+
+.safe-spaces-column {
+    flex: 50%;
+    padding: 50px;
+}
+
+
+
 @media screen and (max-width: 768px) {
     text {
         max-width: 75vw;
