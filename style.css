@@ -73,6 +73,10 @@ nav {
     padding-bottom: 50px;
 }
 
+.main-nav-item {
+    padding: 10px;
+}
+
 a {
     color: white;
 }
