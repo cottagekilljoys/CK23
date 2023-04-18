@@ -1,3 +1,3 @@
-# Cottage Killjoys Mockup Website
+# Cottage Killjoys Website
 
-This is a website-in-progress made for the Women and Gender Studies Senior Colloquium 2023.
+This is a website made for the Women and Gender Studies Colloquium Class of 2023!
